@@ -9,5 +9,5 @@ jobs:
         - name: call reusable workflow to print firstname and lastname
           uses: maheshkamthe/called-worlflow/.github/workflows/my-called-action.yml@main
           with:
-            first-name: "mahesh"
+            first-name: mahesh
 
