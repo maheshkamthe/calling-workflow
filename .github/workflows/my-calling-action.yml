@@ -8,5 +8,4 @@ jobs:
           uses: maheshkamthe/called-worlflow/.github/workflows/my-called-action.yml@main
           with:
             first-name: "mahesh"
-          secrets:
             last-name: ${{ secrets.last-name }}
