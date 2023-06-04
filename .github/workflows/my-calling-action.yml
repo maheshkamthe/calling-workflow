@@ -1,0 +1,12 @@
+name: my calling workflow
+on: push
+jobs:
+  main_workflow_job:
+    runs-on: ubuntu-latest
+    steps:
+        - name: call reusable workflow to print firstname and lastname
+          uses: maheshkamthe/called-worlflow/.github/workflows/my-called-action.yml@main
+          with:
+            first-name: "mahesh"
+          secrets:
+            last-name: ${{ secrets.last-name }}
