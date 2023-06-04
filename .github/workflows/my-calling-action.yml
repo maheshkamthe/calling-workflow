@@ -1,5 +1,6 @@
 name: my calling workflow
 on: push
+
 jobs:
   main_workflow_job:
     runs-on: ubuntu-latest
@@ -8,4 +9,4 @@ jobs:
           uses: maheshkamthe/called-worlflow/.github/workflows/my-called-action.yml@main
           with:
             first-name: "mahesh"
-            last-name: ${{ secrets.last-name }}
+
