@@ -6,7 +6,6 @@ jobs:
     uses: maheshkamthe/called-workflow/.github/workflows/my-called-workflow.yml@main
     with:
         first-name: Mahesh
-    secrets: inherit
 
 
 
