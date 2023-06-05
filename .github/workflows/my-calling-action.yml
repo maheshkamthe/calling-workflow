@@ -11,7 +11,7 @@ jobs:
           with:
             first-name: mahesh
         - name: call reusable workflow in same repo
-          uses: /.guthub/workflows/my-called-action.yml@main
+          uses: /.github/workflows/my-called-action.yml@main
           with:
             first-name: mahesh
 
