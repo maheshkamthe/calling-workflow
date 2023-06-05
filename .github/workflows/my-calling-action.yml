@@ -7,8 +7,9 @@ jobs:
     steps:
         - uses: actions/checkout@master
         - name: call reusable workflow to print firstname and lastname
+          uses: maheshkamthe/called-workflow@main
           #uses: maheshkamthe/called-worlflow/.github/workflows/my-called-action.yml@main
-          uses: ./.github/workflows/my-called-action.yml
-          with:
-            first-name: mahesh
+          #uses: ./.github/workflows/my-called-action.yml
+          #with:
+            #first-name: mahesh
 
