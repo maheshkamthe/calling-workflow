@@ -8,5 +8,5 @@ jobs:
         - uses: actions/checkout@master
         - name: call reusable action in other repo using Dckerfile
           uses: maheshkamthe/called-workflow@main
-          with:
+          env:
             first-name: Mahesh
