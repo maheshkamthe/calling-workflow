@@ -3,17 +3,17 @@ on: push
 
 jobs:
   main_workflow_job:
-    runs-on: ubuntu-latest
-    steps:
-        - uses: actions/checkout@master
-        - name: call reusable workflow in other repo using dockerfile
-          uses: maheshkamthe/called-workflow@main
-          with:
-            first-name: mahesh
-        - name: call reusable workflow in other repo using yaml
-          uses: maheshkamthe/called-workflow/.github/workflows/my-called-action.yml@main
-          with:
-            first-name: mahesh
+    uses: maheshkamthe/called-workflow/.github/workflows/my-called-action.yml@main
+    with:
+        first-name: mahesh
+    secrets: inherit
+    #steps:
+        #- uses: actions/checkout@master
+        #- name: call reusable workflow in other repo using dockerfile
+          #uses: maheshkamthe/called-workflow@main
+          #with:
+            #first-name: mahesh
+
   #      - name: call reusable workflow in same repo
   #        uses: /calling-workflow/.github/workflows/my-called-action.yml@main
   #        with:
