@@ -3,7 +3,7 @@ on: push
 
 jobs:
   main_workflow_job:
-    uses: maheshkamthe/called-workflow/.github/workflows/my-called-action.yml@main
+    uses: maheshkamthe/called-workflow/.github/workflows/my-called-workflow.yml@main
     with:
         first-name: mahesh
     secrets: inherit
