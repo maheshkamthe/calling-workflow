@@ -11,7 +11,7 @@ jobs:
           with:
             first-name: mahesh
         - name: call reusable workflow in other repo using yaml
-          uses: called-workflow/.GitHub/workflows/my-called-action.yml@main
+          uses: called-workflow/.github/workflows/my-called-action.yml@main
           with:
             first-name: mahesh
   #      - name: call reusable workflow in same repo
