@@ -9,4 +9,4 @@ jobs:
         - name: call reusable action in other repo using Dckerfile
           uses: maheshkamthe/called-workflow@main
           env:
-            first-name: Mahesh
+            firstname: Mahesh
